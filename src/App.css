@@ -1,0 +1,220 @@
+/* Reset and Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(252, 250, 247);
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  color: #f2f7f2;
+  font-size: 2em;
+  pointer-events: none;
+  font-family: "DM Serif Display", system-ui;
+}
+
+.navigation a {
+  color: #f1f4f1;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 6px 15px;
+  margin: 0px 10px;
+  font-weight: 600;
+}
+
+.navigation a:hover {
+  background-color: #1c1d1d;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Add this to existing CSS */
+.home .title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 80px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  animation: moveDown 3s ease forwards;
+  opacity: 1;
+}
+
+
+
+
+/* About Section */
+
+.about {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px; /* Padding for spacing */
+  text-align: center; /* Center the text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about h2 {
+  font-size: 2.5rem; /* Larger font for the heading */
+  color: #333; /* Dark color for text */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.about p {
+  font-size: 1.2rem; /* Slightly larger text */
+  color: #555; /* Medium grey for text */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.about-images {
+  display: flex; /* Flexbox for image alignment */
+  justify-content: center; /* Center images */
+  margin-top: 20px; /* Space above images */
+}
+
+.about-images img {
+  width: 30%; /* Adjust size of images */
+  margin: 0 10px; /* Space between images */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
+}
+
+.about-images img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+
+/* FeaturedCities */
+.featured-cities {
+  padding: 40px;
+  text-align: center;
+ 
+}
+.featured-cities h2{
+  margin-bottom: 40px;
+  font-family: "DM Serif Display", serif;
+}
+.cities-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.city-card {
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.city-card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover img {
+  transform: scale(1.1);
+}
+
+/* SunsetSpots.css */
+.sunset-section {
+  background-image: url("https://wallpapercave.com/wp/wp10857922.jpg");
+  background-size: cover;
+  background-attachment: fixed; /* Fix background on scroll */
+  background-position: center; /* Center the image */
+  height: 600px; /* Height for the section */
+  color: white; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Ensures positioning works for child elements */
+  overflow: hidden; /* Ensures no overflow */
+}
+
+.sunset-spots {
+  position: relative; /* Ensure text is above the background */
+  z-index: 2; /* Bring the text above the background image */
+}
+
+h2, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Removes default list styles */
+}
+.sunset-spots h2{
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+}
+.sunset-spots ul li {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Anton SC", sans-serif;
+}
+
+
+/* Footer.css */
+.footer {
+  background-color: #111010; /* Adjust the footer background color */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add padding */
+}
+
+.social-icons {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox to align items in a row */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.social-icons li {
+  margin: 0 15px; /* Add some space between icons */
+  font-size: 24px; /* Adjust icon size */
+}
+
+.social-icons li i {
+  color: rgb(169, 108, 254); /* Icon color */
+  transition: color 0.3s; /* Add transition for hover effect */
+}
+
+.social-icons li i:hover {
+  color: #e31308; /* Change icon color on hover */
+}
+
+
